@@ -1,0 +1,19 @@
+<h1>All Heroes</h1>
+
+<ul>
+  <div class="heroes-list-container" *ngFor="let value of list; let i = index">
+    <li>{{value}}</li>
+    <input type="button" value="Delete this." (click)="deleteOne(i)">
+  </div>
+</ul>
+
+<p *ngIf="deleted; else noDeleted">Value deleted: {{deleted}}</p>
+<ng-template #noDeleted>
+  <p>No has borrado nada.</p>
+</ng-template>
+
+<div id="add-heroe-buttons">
+  <input #newHeroeInput type="text" (change)="changeNewHero(newHeroeInput.value)"/>
+  <input type="button" value="Agregar" (click)="addValue()"/>
+</div>
+

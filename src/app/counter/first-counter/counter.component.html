@@ -1,0 +1,9 @@
+<h2>This is my component: {{ title }}</h2>
+<h2>Current number: {{ number }}</h2>
+
+<h3>The base is: {{base}}</h3>
+
+<div id="counter-buttons">
+  <input type="button" class="counter-button" value="+{{base}}" (click)="addValue(this.base)"/>
+  <input type="button" class="counter-button" value="-{{base}}" (click)="addValue(-this.base)"/>
+</div>
