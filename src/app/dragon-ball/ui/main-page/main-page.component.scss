@@ -1,0 +1,13 @@
+#characters-father{
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+
+  .row{
+    width: 40%;
+
+    .characters-father-tittle{
+      text-align: center;
+    }
+  }
+}

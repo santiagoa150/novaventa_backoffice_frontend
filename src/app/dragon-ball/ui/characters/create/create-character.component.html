@@ -1,0 +1,9 @@
+<div class="row">
+  <h3 class="characters-father-tittle"> Agregar {{newCharacter.name}} </h3>
+  <hr>
+  <form (ngSubmit)="createCharacter()">
+    <input type="text" placeholder="Name" name="character-name" [(ngModel)]="newCharacter.name"/>
+    <input type="number" placeholder="Power" name="character-power" min="0" [(ngModel)]="newCharacter.power">
+    <input type="submit" />
+  </form>
+</div>
